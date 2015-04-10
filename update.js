@@ -1,10 +1,14 @@
 var update = [
 	"Updated features:",
-	"- Fucking update page now woo",
+	"- Added 600 more responses",
 	"",
-	"- Added ~600 more responses",
+	"- Sorted every response (manually) into who, what, and action categories",
 	"",
-	"- Began sorting responses into objects, people, and actions to make the bot slightly smarter in response choice (fuction still inactive)"
+	"- Added the feature to ask for responses by categories listed above (see cahbot options)",
+	"",
+	"- Added (unstoppable tide of Islam) response",
+	"",
+	"- Cahbot is no longer case sensitive, so go wild"
 	].join("\n");
 
 module.exports = update;

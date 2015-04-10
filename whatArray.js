@@ -419,7 +419,8 @@ var whatArray = [
 	'Too many lemons.',
 	'sudo make me a sandwich.',
 	'I should buy a boat.',
-	'An army of jtrucks clones.'
+	'An army of jtrucks clones.',
+	'The unstoppable tide of Islam.'
 
 ]
 
