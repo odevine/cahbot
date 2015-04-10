@@ -143,7 +143,7 @@ function postOptions() {
 }
 
 function postUpdate() {
-    var update, body, botReq;
+    var options, body, botReq;
     
     options = {
         hostname: 'api.groupme.com',
