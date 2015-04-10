@@ -146,7 +146,7 @@ var CAHarray = [
 	'A sad handjob.',
 	'Exactly what you\'d expect.',
 	'Expecting a burp and vomiting on the floor.',
-	'Adderall™'
+	'Adderall™',
 	'Embryonic stem cells.',
 	'Tasteful sideboob.',
 	'Panda sex.',
