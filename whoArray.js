@@ -1,0 +1,35 @@
+var whoArray = [
+
+	'An honest cop with nothing left to lose.',
+	'Shapeshifters.',
+	'Porn stars.',
+	'72 virgins.',
+	'Consultants.',
+	'Former President George W. Bush.',
+	'The Hamburglar.',
+	'Kanye West.',
+	'A middle-aged man on roller skates.',
+	'Children on leashes.',
+	'Gandhi.',
+	'Customer service representatives.',
+	'The Make-A-Wish Foundation.',
+	'The Chinese gymnastics team.',
+	'The Jews.',
+	'Mr. Clean, right behind you.',
+	'Republicans.',
+	'Natalie Portman.',
+	'Sean Connery.',
+	'The hardworking Mexican.',
+	'Altar boys.',
+	'The Kool-Aid Man.',
+	'RoboCop.',
+	'Justin Bieber.',
+	'Oompa-Loompas.',
+	'Ghosts.',
+	'John Wilkes Booth.',
+	'Preteens.',
+	'Darth Vader.',
+
+]
+
+module.exports = whoArray;
