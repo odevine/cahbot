@@ -12,10 +12,10 @@ function respond() {
         botRegex1 = /^cahbot.*_.*_/i,
         botRegex2 = /^cahbot options/i,
         botRegex3 = /^cahbot update/i,
-        botRegex4 = /^cahbot.*-who.*/,
-        botRegex5 = /^cahbot.*-what.*/,
-        botRegex6 = /^cahbot.*-act.*/,
-        botRegex7 = /^cahbot/,
+        botRegex4 = /^cahbot.*-who.*/i,
+        botRegex5 = /^cahbot.*-what.*/i,
+        botRegex6 = /^cahbot.*-act.*/i,
+        botRegex7 = /^cahbot/i,
         word1,
         word2;
 
