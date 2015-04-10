@@ -1,19 +1,25 @@
 var HTTPS = require('https'),
     botID = process.env.BOT_ID,
-    myArray = require('./whitecardarray.js'),
+    everything = require('./whitecardarray.js'),
+    who = require('./whoArray.js'),
+    what = require('./whatArray.js'),
+    action = require('./actionArray.js'),
     menu = require('./options.js'),
     update = require('./update.js');
 
 function respond() {
     var request = JSON.parse(this.req.chunks[0]),
-        botRegex1 = /^cahbot.*_.*_/,
-        botRegex2 = /^cahbot options/,
-        botRegex3 = /^cahbot update/,
-        botRegex4 = /^cahbot/,
+        botRegex1 = /^cahbot.*_.*_/i,
+        botRegex2 = /^cahbot options/i,
+        botRegex3 = /^cahbot update/i,
+        botRegex4 = /^cahbot.*-who.*/,
+        botRegex5 = /^cahbot.*-what.*/,
+        botRegex6 = /^cahbot.*-act.*/,
+        botRegex7 = /^cahbot/,
         word1,
         word2;
 
-    //test if asking for 2 words
+    //REGEX1
     if(request.text && botRegex1.test(request.text)) {
         this.res.writeHead(200);
         setTimeout(function() {
@@ -25,6 +31,7 @@ function respond() {
         this.res.end();
 
     }
+    //REGEX2
     else if(request.text && botRegex2.test(request.text)){
         this.res.writeHead(200);
         setTimeout(function() {
@@ -33,6 +40,7 @@ function respond() {
         }, 500);
         this.res.end();
     }
+    //REGEX3
     else if(request.text && botRegex3.test(request.text)){
         this.res.writeHead(200);
         setTimeout(function() {
@@ -41,11 +49,39 @@ function respond() {
         }, 500);
         this.res.end();
     }
-    //test if asking for one word
+    //REGEX4
     else if(request.text && botRegex4.test(request.text)){
         this.res.writeHead(200);
         setTimeout(function() {
-            word1 = getWord1();
+            word1 = getWord1(who);
+            postMessage(word1);
+            console.log('posted who!');
+        }, 500);
+        this.res.end();
+    }//REGEX5
+    else if(request.text && botRegex5.test(request.text)){
+        this.res.writeHead(200);
+        setTimeout(function() {
+            word1 = getWord1(what);
+            postMessage(word1);
+            console.log('posted what!');
+        }, 500);
+        this.res.end();
+    }//REGEX6
+    else if(request.text && botRegex6.test(request.text)){
+        this.res.writeHead(200);
+        setTimeout(function() {
+            word1 = getWord1(action);
+            postMessage(word1);
+            console.log('posted action!');
+        }, 500);
+        this.res.end();
+    }
+    //REGEX7
+    else if(request.text && botRegex7.test(request.text)){
+        this.res.writeHead(200);
+        setTimeout(function() {
+            word1 = getWord1(everything);
             postMessage(word1);
             console.log('posted single word message!');
         }, 500);
@@ -61,15 +97,15 @@ function respond() {
 }
 
 
-function getWord1() {
+function getWord1(array) {
     var rand1; 
-    rand1 = myArray[Math.floor(Math.random() * myArray.length)];
+    rand1 = array[Math.floor(Math.random() * array.length)];
     return rand1;
 }
 
-function getWord2() {
+function getWord2(array) {
     var rand2; 
-    rand2 = myArray[Math.floor(Math.random() * myArray.length)];
+    rand2 = array[Math.floor(Math.random() * array.length)];
     return rand2;
 }
 
