@@ -4,7 +4,7 @@ var update = [
 	"",
 	"- Sorted every response (manually) into who, what, and action categories",
 	"",
-	"- Added the feature to ask for responses by categories listed above (see cahbot options)",
+	"- Added the feature to ask for responses by categories listed above (see 'cahbot options')",
 	"",
 	"- Added (unstoppable tide of Islam) response",
 	"",
