@@ -1,19 +1,3 @@
-Skip to content
- This repository
-Explore
-Gist
-Blog
-Help
-@odevine odevine
- 
- Unwatch 1
-  Star 0
-  Fork 0
-odevine/cahbot
- branch: master  cahbot/bot.js
-@odevineodevine an hour ago make it better
-1 contributor
-RawBlameHistory     214 lines (174 sloc)  5.232 kb
 var HTTPS = require('https'),
     botID = process.env.BOT_ID,
     myArray = require('./whitecardarray.js'),
@@ -228,5 +212,3 @@ function postMessage(a) {
 }
 
 exports.respond = respond;
-Status API Training Shop Blog About
-© 2015 GitHub, Inc. Terms Privacy Security Contact
