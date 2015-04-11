@@ -97,15 +97,15 @@ function respond() {
 }
 
 
-function getWord1(array) {
+function getWord1(a) {
     var rand1; 
-    rand1 = array[Math.floor(Math.random() * array.length)];
+    rand1 = a[Math.floor(Math.random() * a.length)];
     return rand1;
 }
 
-function getWord2(array) {
+function getWord2(a) {
     var rand2; 
-    rand2 = array[Math.floor(Math.random() * array.length)];
+    rand2 = a[Math.floor(Math.random() * a.length)];
     return rand2;
 }
 
