@@ -170,7 +170,7 @@ function postOther(a) {
         "text": a
     };
 
-    console.log('sending ' + n + ' to ' + botID);
+    console.log('sending ' + a + ' to ' + botID);
 
     botReq = HTTPS.request(options, function(res) {
         if(res.statusCode == 202) {
