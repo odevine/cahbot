@@ -8,7 +8,7 @@ var update = [
 	"",
 	"- Added (unstoppable tide of Islam) response",
 	"",
-	"- Cahbot is no longer case sensitive, so go wild"
+	"- Cahbot is no longer case sensitive, so go wild",
 	"",
 	"- Added 'random' feature <--- fun"
 	].join("\n");
