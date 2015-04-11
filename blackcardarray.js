@@ -115,8 +115,8 @@ var blackcards = [
 	"cahbot Major League Baseball has banned _ for giving players an unfair advantage.",
 	"cahbot My plan for world domination begins with _.",
 	"cahbot The CIA now interrogates enemy agents by repeatedly subjecting them to _.",
-	"cahbot Dear Sir or Madam, We regret to inform you that the Office of _ has denied your request for _."
-	"cahbot n Rome, there are whisperings that the Vatican has a secret room devoted to _.",
+	"cahbot Dear Sir or Madam, We regret to inform you that the Office of _ has denied your request for _.",
+	"cahbot In Rome, there are whisperings that the Vatican has a secret room devoted to _.",
 	"cahbot Science will never explain _.",
 	"cahbot When all else fails, I can always masturbate to _.",
 	"cahbot I learned the hard way that you can't cheer up a grieving friend with _.",
