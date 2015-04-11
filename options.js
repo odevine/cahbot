@@ -6,6 +6,7 @@ var menu = [
 	"- Type '-what' anywhere in the question to get an object as a response",
 	"- Type '-who' anywhere in the question to get an person as a response",
 	"- Type '-act' anywhere in the question to get an action as a response",
+	"- Type 'cahbot random' if you are feeling lazy",
 	"",
 	"Have fun,",
 	"Owen"
