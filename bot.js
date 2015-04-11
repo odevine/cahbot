@@ -23,8 +23,8 @@ function respond() {
     if(request.text && botRegex1.test(request.text)) {
         this.res.writeHead(200);
         setTimeout(function() {
-            word1 = getWord1();
-            word2 = getWord2();
+            word1 = getWord1(everything);
+            word2 = getWord2(everything);
             postMultiMessage(word1,word2);
             console.log('posted multi-word message!');
         }, 500);
@@ -98,7 +98,7 @@ function respond() {
 
 
 function getWord1(a) {
-    var rand1; 
+    var rand1;
     rand1 = a[Math.floor(Math.random() * a.length)];
     return rand1;
 }
