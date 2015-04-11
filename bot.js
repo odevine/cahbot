@@ -132,7 +132,7 @@ function postMultiMessage(a,b) {
 
     body = {
         "bot_id": botID,
-        "text": "." + "\n" + a + "\n" + b + "\n" + "."
+        "text": a + "\n" + b
     };
 
     console.log('sending ' + a + b + ' to ' + botID);
@@ -202,7 +202,7 @@ function postMessage(a) {
 
     body = {
         "bot_id": botID,
-        "text": "." + "\n" + a + "\n" + "."
+        "text": a
     };
 
     console.log('sending ' + a + ' to ' + botID);
